@@ -1,18 +1,22 @@
 import "./App.css";
 import AgeInfo from "./components/AgeInfo/AgeInfo";
+import DogCard from "./components/DogCard/DogCard";
 import Goodbye from "./components/Goodbye/Goodbye";
 import Greeting from "./components/Greeting/Greeting";
+import ProfileCard from "./components/ProfileCard/ProfileCard";
 
 function App() {
   return (
     <div>
-      <p>Hello, React!</p>
+      {/* <p>Hello, React!</p> */}
       <Greeting />
-      <Greeting />
+      <DogCard />
+      <ProfileCard avatar={"https://static.vecteezy.com/system/resources/previews/011/459/669/original/people-avatar-icon-png.png"} name={"Иванова Ирина Ивановна"} description={"Фанатка спорта, книг и хорошего кофе"} />
+      {/* <Greeting />
       <Greeting />
       <Goodbye name={"Bob"} />
       <Goodbye name={"John"} />
-      <AgeInfo age={25} name={"Bob"}/>
+      <AgeInfo age={25} name={"Bob"}/> */}
     </div>
   );
 }
